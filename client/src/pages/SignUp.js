@@ -26,7 +26,7 @@ function SignUp() {
         promise.then(
             function (response) {
                 console.log(response);
-                navigate("/")
+                navigate("/home")
             },
             function (error) {
                 console.log(error);
