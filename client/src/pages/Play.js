@@ -1,0 +1,92 @@
+import React from 'react'
+import { HiX } from "react-icons/hi";
+
+export default function Play() {
+
+    const [showNavbar, setShowNavbar] = React.useState(false);
+
+    return (
+        <div>
+            <div className='grid place-items-center py-6'>
+                <h1 className='text-5xl font-bold text-white'>Play Quest</h1>
+                <div className='h-1 w-56 bg-secondary my-2'></div>
+            </div>
+
+            <div className="flex flex-wrap flex-col-2 justify-around w-full px-16">
+
+                <div className="m-8">
+                    <div className="w-[18rem] h-[18rem] cursor-pointer transition duration-500 transform hover:scale-105 border-4 border-secondary rounded-lg" onClick={() => setShowNavbar(true)}>
+                        <div className="grid place-content-center text-4xl text-center items-center align-middle h-full font-semibold text-white">Create/Join Room</div>
+                    </div>
+                </div>
+                {showNavbar ? (
+                    <div>
+                        <div className=" flex overflow-x-hidden mx-4 md:mx-8 h-screen overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none items-center justify-center w-screen">
+                            <div className="relative my-6 mx-auto w-screen">
+                                <div className="ml-[25rem] border-0   shadow-lg relative flex flex-col w-128 bg-gray-800 outline-none focus:outline-none ">
+                                    <div className="flex items-start justify-between p-5 border-solid rounded-t">
+                                        <div>
+                                            <div className="text-2xl font-base tracking-wide cursor-pointer text-white">
+                                                Join Room
+                                            </div>
+                                        </div>
+
+                                        <button
+                                            className="absolute right-6"
+                                            onClick={() => setShowNavbar(false)}
+                                            aria-hidden="false"
+                                            aria-label="button"
+                                        >
+                                            <HiX
+                                                className="h-7 w-7 text-white"
+                                                aria-hidden="false"
+                                            />
+                                        </button>
+                                    </div>
+
+                                    <div className="grid place-items-center text-xl py-2 gap-2 w-full mb-4">
+
+                                        <div className="py-2">
+                                            <input
+                                                className="w-96 p-2 active:border-none checked:border-none rounded-md text-xl"
+                                                placeholder="Enter room id"
+                                            />
+                                        </div>
+
+                                        <button className="bg-blue-600 text-white py-2 px-8 rounded-md ml-2">
+                                            Join Room
+                                        </button>
+
+                                        <div className="grid justify-center">
+                                            <div className="inline-flex w-64 h-1 bg-indigo-500 rounded-full"></div>
+                                        </div>
+
+                                        <div className="py-2">
+                                            <input
+                                                className="w-96 p-2 active:border-none checked:border-none rounded-md text-xl"
+                                                placeholder="Name of the room"
+                                            />
+                                        </div>
+
+                                        <button className="bg-blue-600 text-white py-2 px-8 rounded-md ml-2">
+                                            Create Room
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="opacity-25 fixed inset-0 z-40 h-screen bg-black"></div>
+                    </div>
+                ) : null}
+
+                <div className="m-8">
+                    <div className="w-[18rem] h-[18rem] cursor-pointer transition duration-500 transform hover:scale-105 border-4 border-secondary rounded-lg">
+                        <div className="grid place-content-center text-4xl text-center items-center align-middle h-full font-semibold text-white">Play Solo</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    )
+}
