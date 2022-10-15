@@ -48,7 +48,7 @@ function SignUp() {
 
                     <div className="md:flex md:flex-col md:justify-center lg:pr-16">
 
-                        <h2 className="mb-4 text-6xl self-center font-bold tracking-wider text-white">
+                        <h2 className="mb-4 text-[2.79rem] self-center font-bold tracking-wider text-white">
                             Conquer the West
                         </h2>
 
