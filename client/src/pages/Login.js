@@ -36,7 +36,7 @@ function Login() {
                     <div className="md:flex md:flex-col md:justify-center lg:pr-16">
 
                         <h2 className="mb-4 text-6xl self-center font-bold tracking-wider text-white">
-                            APP NAME
+                            Conquer the West
                         </h2>
 
                         <div className="relative mt-4 outline-transparent outline">
@@ -61,6 +61,10 @@ function Login() {
 
                         <div className="grid place-items-center w-full">
                             <button type="button" className="h-12 w-full px-8 text-base font-semibold tracking-wider text-white border rounded-full shadow-sm font-fontVollkorn my-6 bg-red-50 bg-gradient-to-r from-purple-400 via-purple-500 to-pink-500 hover:shadow-lg" onClick={loginUser}>Sign In</button>
+                        </div>
+
+                        <div className='flex justify-end text-white'>
+                            Don't have an account? <a href="/signup" className="text-blue-500">Register</a>
                         </div>
 
                     </div>
