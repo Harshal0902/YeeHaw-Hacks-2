@@ -1,9 +1,23 @@
 import React from 'react'
 import { HiX } from "react-icons/hi";
+import io from 'socket.io-client';
+import { Link, useNavigate } from 'react-router-dom';
 
-export default function Play() {
+const Play = ({ username, }) => {
+
+    const navigate = useNavigate();
 
     const [showNavbar, setShowNavbar] = React.useState(false);
+    const [room, setRoom] = React.useState('');
+    const socket = io.connect('http://localhost:4000');
+
+    const joinRoom = () => {
+        if (room !== '' && username !== '') {
+            socket.emit('join_room', { username, room });
+        }
+        navigate('/room', { replace: true });
+    };
+
 
     return (
         <div>
@@ -53,7 +67,7 @@ export default function Play() {
                                             />
                                         </div>
 
-                                        <button className="bg-blue-600 text-white py-2 px-8 rounded-md ml-2">
+                                        <button className="bg-blue-600 text-white py-2 px-8 rounded-md ml-2" onClick={joinRoom}>
                                             Join Room
                                         </button>
 
@@ -68,7 +82,7 @@ export default function Play() {
                                             />
                                         </div>
 
-                                        <button className="bg-blue-600 text-white py-2 px-8 rounded-md ml-2">
+                                        <button className="bg-blue-600 text-white py-2 px-8 rounded-md ml-2" onClick={joinRoom}>
                                             Create Room
                                         </button>
                                     </div>
@@ -81,12 +95,16 @@ export default function Play() {
                 ) : null}
 
                 <div className="m-8">
-                    <div className="w-[18rem] h-[18rem] cursor-pointer transition duration-500 transform hover:scale-105 border-4 border-secondary rounded-lg">
-                        <div className="grid place-content-center text-4xl text-center items-center align-middle h-full font-semibold text-white">Play Solo</div>
-                    </div>
+                    <Link to="/play_game">
+                        <div className="w-[18rem] h-[18rem] cursor-pointer transition duration-500 transform hover:scale-105 border-4 border-secondary rounded-lg">
+                            <div className="grid place-content-center text-4xl text-center items-center align-middle h-full font-semibold text-white">Play Solo</div>
+                        </div>
+                    </Link>
                 </div>
 
             </div>
         </div>
     )
 }
+
+export default Play;
