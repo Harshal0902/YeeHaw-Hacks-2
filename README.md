@@ -10,7 +10,7 @@ Our web app "Conquer the West" is built with features:
 
 - Challenge different opponents and survive the quest.
 - Users can come and create rooms and invite their friends.
-- Climb up the leaderboard and concur the wild west.
+- Climb up the leaderboard and conquer the wild west.
 
 ## ⚙️ How we built it
 
@@ -21,7 +21,7 @@ Our web app "Conquer the West" is built with features:
 
 ## ☁️ Best Use of Appwrite
 
-We are using Appwrite for building our backend. We are using **Appwrite's Database** to store the data of the users and their progress. We are also using **Appwrite's Storage** to store the images of the markers. We are using **Appwrite's Functions** to send the notification to Animal Rescue. We are using **Appwrite's OAuth** to authenticate the users. We are using **Appwrite's Console** to manage the database and the storage. We are using **Appwrite's CLI** to deploy the functions. Appwrite made it very easy for us to build our backend. We learned how robust & fast Appwrite services are as it has a free plan that was great for us student hackers.
+We are using Appwrite for building our backend. We are using **Appwrite's Database** to store the data of the users and their progress. We are also using **Appwrite's Storage** to store the powers of the players. We are using **Appwrite's Functions** customize your Appwrite server functionality. We are using **Appwrite's Authentication** to authenticate the users. Appwrite made it very easy for us to build our backend. We learned how robust & fast Appwrite services are as it has a free plan that was great for us student hackers.
 
 ## 🧠 Challenges we ran into
 
