@@ -22,7 +22,7 @@ export default function PlayGame() {
             <div className="grid place-items-center mx-1 text-2xl font-semibold text-gray-900 py-2">
               <Link to="/challange">
                 <button
-                  className="text-white py-2 px-8 rounded-md text-xl md:text-xl bg-blue-500"
+                  className="text-white py-2 px-8 rounded-md text-xl md:text-xl bg-secondary"
                 >
                   Challange
                 </button>
@@ -37,7 +37,7 @@ export default function PlayGame() {
             <div className="grid place-items-center mx-1 text-2xl font-semibold text-gray-900 py-2">
               <Link to="/challange">
                 <button
-                  className="text-white py-2 px-8 rounded-md text-xl md:text-xl bg-blue-500"
+                  className="text-white py-2 px-8 rounded-md text-xl md:text-xl bg-secondary"
                 >
                   Challange
                 </button>
@@ -52,7 +52,7 @@ export default function PlayGame() {
             <div className="grid place-items-center mx-1 text-2xl font-semibold text-gray-900 py-2">
               <Link to="/challange">
                 <button
-                  className="text-white py-2 px-8 rounded-md text-xl md:text-xl bg-blue-500"
+                  className="text-white py-2 px-8 rounded-md text-xl md:text-xl bg-secondary"
                 >
                   Challange
                 </button>
@@ -67,7 +67,7 @@ export default function PlayGame() {
             <div className="grid place-items-center mx-1 text-2xl font-semibold text-gray-900 py-2">
               <Link to="/challange">
                 <button
-                  className="text-white py-2 px-8 rounded-md text-xl md:text-xl bg-blue-500"
+                  className="text-white py-2 px-8 rounded-md text-xl md:text-xl bg-secondary"
                 >
                   Challange
                 </button>
@@ -82,7 +82,7 @@ export default function PlayGame() {
             <div className="grid place-items-center mx-1 text-2xl font-semibold text-gray-900 py-2">
               <Link to="/challange">
                 <button
-                  className="text-white py-2 px-8 rounded-md text-xl md:text-xl bg-blue-500"
+                  className="text-white py-2 px-8 rounded-md text-xl md:text-xl bg-secondary"
                 >
                   Challange
                 </button>

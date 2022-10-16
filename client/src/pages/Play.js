@@ -37,10 +37,10 @@ const Play = ({ username, }) => {
                     <div>
                         <div className=" flex overflow-x-hidden mx-4 md:mx-8 h-screen overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none items-center justify-center w-screen">
                             <div className="relative my-6 mx-auto w-screen">
-                                <div className="ml-[25rem] border-0   shadow-lg relative flex flex-col w-128 bg-gray-800 outline-none focus:outline-none ">
+                                <div className="ml-[25rem] border-0   shadow-lg relative flex flex-col w-128 bg-yellow-300 outline-none focus:outline-none ">
                                     <div className="flex items-start justify-between p-5 border-solid rounded-t">
                                         <div>
-                                            <div className="text-2xl font-base tracking-wide cursor-pointer text-white">
+                                            <div className="text-2xl tracking-wide cursor-pointer font-[900]">
                                                 Join Room
                                             </div>
                                         </div>
@@ -67,12 +67,12 @@ const Play = ({ username, }) => {
                                             />
                                         </div>
 
-                                        <button className="bg-blue-600 text-white py-2 px-8 rounded-md ml-2" onClick={joinRoom}>
+                                        <button className="bg-[#e17059] text-white py-2 px-8 rounded-md ml-2" onClick={joinRoom}>
                                             Join Room
                                         </button>
 
                                         <div className="grid justify-center">
-                                            <div className="inline-flex w-64 h-1 bg-indigo-500 rounded-full"></div>
+                                            <div className="inline-flex w-64 h-1 bg-orange-400 rounded-full"></div>
                                         </div>
 
                                         <div className="py-2">
@@ -82,7 +82,7 @@ const Play = ({ username, }) => {
                                             />
                                         </div>
 
-                                        <button className="bg-blue-600 text-white py-2 px-8 rounded-md ml-2" onClick={joinRoom}>
+                                        <button className="bg-[#e17059] text-white py-2 px-8 rounded-md ml-2" onClick={joinRoom}>
                                             Create Room
                                         </button>
                                     </div>
