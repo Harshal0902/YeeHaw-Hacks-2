@@ -32,9 +32,10 @@ export default function Home() {
           <p className='text-2xl md:text-2xl py-4 tracking-wider'> Conquer the West is a web app where you can:
           </p>
           <ul className="text-2xl">
+            <li className="list-disc">Climb up the leaderboard and concur the wild west.</li>
+            <li className="list-disc">Choose your opponent and challenge them to a duel.</li>
             <li className="list-disc">Challange different opponents and survive the quest.</li>
             <li className="list-disc">Users can come and create rooms and invite their friends.</li>
-            <li className="list-disc">Climb up the leaderboard and concur the wild west.</li>
           </ul>
         </div>
       </div>
