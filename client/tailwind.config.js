@@ -7,8 +7,8 @@ module.exports = {
     extend: {
       colors: {
         primary: "#1B2431",
-        secondary: "#016795",
-        tertiary: "#1E488F",
+        secondary: "#CF4C32",
+        tertiary: "#d83920",
       },
       zIndex: {
         "-1": "-1",

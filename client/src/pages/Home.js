@@ -1,6 +1,6 @@
 import React from "react"
-import HeroImg from '../assets/hero.svg'
-import FeatImg from '../assets/feat.svg'
+import HeroImg from '../assets/hero.png'
+import FeatImg from '../assets/feat.png'
 import { Link } from 'react-router-dom';
 
 export default function Home() {

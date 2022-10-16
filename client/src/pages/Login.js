@@ -26,7 +26,7 @@ function Login() {
 
             <div className="z-10 mt-16 bg-tertiary md:h-96 md:w-96 md:mt-16 md:ml-44 rounded-3xl"></div>
 
-            <div className="z-20 p-4 m-8 origin-bottom-right transform border-4 border-secondary lg:mx-56 md:mx-8 lg:-mt-80 rounded-2xl bg-gray-800">
+            <div className="z-20 p-4 m-8 origin-bottom-right transform border-4 border-[#520606] lg:mx-56 md:mx-8 lg:-mt-80 rounded-2xl bg-[#FFCD52]">
                 <div className="p-4 space-y-10 md:space-y-0 md:grid md:grid-cols-2">
 
                     <div className="w-11/12 p-8 rounded-lg lg:-ml-4 sm:ml-16">
@@ -60,7 +60,7 @@ function Login() {
                         </div>
 
                         <div className="grid place-items-center w-full">
-                            <button type="button" className="h-12 w-full px-8 text-base font-semibold tracking-wider text-white border rounded-full shadow-sm font-fontVollkorn my-6 bg-red-50 bg-gradient-to-r from-purple-400 via-purple-500 to-pink-500 hover:shadow-lg" onClick={loginUser}>Sign In</button>
+                            <button type="button" className="h-12 w-full px-8 text-base font-semibold tracking-wider text-white border rounded-full shadow-sm font-fontVollkorn my-6 bg-red-50 bg-gradient-to-r from-yellow-500 to-orange-500 hover:shadow-lg" onClick={loginUser}>Sign In</button>
                         </div>
 
                         <div className='flex justify-end text-white'>
