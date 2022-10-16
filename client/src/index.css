@@ -10,7 +10,11 @@
 }
 
 body {
-  background-color: #1B2431;
+  /* background-color: #1B2431; */
+  background-image: url("./assets/bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 input:focus-within ~ label {

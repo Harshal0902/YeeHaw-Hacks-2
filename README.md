@@ -19,6 +19,10 @@ Our web app "Conquer the West" is built with features:
 - Database and Auth: Appwrite
 - Styling: Tailwind CSS
 
+## 🌐 Best Domain Name from GoDaddy Registry
+
+- conquer-the-west-with.us
+
 ## ☁️ Best Use of Appwrite
 
 We are using Appwrite for building our backend. We are using **Appwrite's Database** to store the data of the users and their progress. We are also using **Appwrite's Storage** to store the powers of the players. We are using **Appwrite's Functions** customize your Appwrite server functionality. We are using **Appwrite's Authentication** to authenticate the users. Appwrite made it very easy for us to build our backend. We learned how robust & fast Appwrite services are as it has a free plan that was great for us student hackers.
