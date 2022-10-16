@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Battle, EndMenu, StartMenu } from './index';
+import { Battle, EndMenu, StartMenu } from 'components';
 
 export const App = () => {
   const [winner, setWinner] = useState();
@@ -12,7 +12,7 @@ export const App = () => {
   }, [mode]);
 
   return (
-    <div className="styles.main">
+    <div className="w-screen h-screen flex items-center flex-col justify-between">
       {mode === 'start' && (
         <StartMenu onStartClick={() => setMode('battle')} />
       )}

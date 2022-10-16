@@ -1,8 +1,7 @@
-import styles from './styles.module.css';
 import { useEffect, useState } from 'react';
-import { useAIOpponent, useBattleSequence } from '../hooks';
-import { opponentStats, playerStats, wait } from '../shared';
-import { BattleMenu, PlayerSummary, BattleAnnouncer } from './index';
+import { useAIOpponent, useBattleSequence } from 'hooks';
+import { opponentStats, playerStats, wait } from 'shared';
+import { BattleMenu, PlayerSummary, BattleAnnouncer } from 'components';
 
 export const Battle = ({ onGameEnd }) => {
   const [sequence, setSequence] = useState({});
@@ -36,8 +35,8 @@ export const Battle = ({ onGameEnd }) => {
 
   return (
     <>
-      <div className={styles.opponent}>
-        <div className={styles.summary}>
+      <div className="flex flex-col w-full p-6 box-border">
+        <div className="flex items-end justify-start">
           <PlayerSummary
             main={false}
             health={opponentHealth}
@@ -48,30 +47,30 @@ export const Battle = ({ onGameEnd }) => {
         </div>
       </div>
 
-      <div className={styles.characters}>
-        <div className={styles.gameHeader}>
+      <div className="w-full flex justify-between">
+        <div className="h-48">
           {playerStats.name} vs {opponentStats.name}
         </div>
-        <div className={styles.gameImages}>
-          <div className={styles.playerSprite}>
+        <div className="text-5xl text-yellow-600">
+          <div className="items-start justify-end">
             <img
               alt={playerStats.name}
               src={playerStats.img}
-              className={styles[playerAnimation]}
+              className="w-full text-center"
             />
           </div>
-          <div className={styles.opponentSprite}>
+          <div className="flex justify-between p-6 box-border">
             <img
               alt={opponentStats.name}
               src={opponentStats.img}
-              className={styles[opponentAnimation]}
+              width="350" height="350"
             />
           </div>
         </div>
       </div>
 
-      <div className={styles.user}>
-        <div className={styles.summary}>
+      <div>
+        <div >
           <PlayerSummary
             main={true}
             health={playerHealth}
@@ -81,8 +80,8 @@ export const Battle = ({ onGameEnd }) => {
           />
         </div>
 
-        <div className={styles.hud}>
-          <div className={styles.hudChild}>
+        <div>
+          <div>
             <BattleAnnouncer
               message={
                 announcerMessage || `What will ${playerStats.name} do?`
@@ -90,7 +89,7 @@ export const Battle = ({ onGameEnd }) => {
             />
           </div>
           {!inSequence && turn === 0 && (
-            <div className={styles.hudChild}>
+            <div>
               <BattleMenu
                 onHeal={() => setSequence({ mode: 'heal', turn })}
                 onMagic={() => setSequence({ mode: 'magic', turn })}
