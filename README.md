@@ -8,9 +8,10 @@ Welcome to the world of the Wild West. As a protagonist, you are the sheriff of 
 
 Our web app "Conquer the West" is built with features:
 
+- Choose your opponent and challenge them to a duel.
+- Climb up the leaderboard and conquer the wild west.
 - Challenge different opponents and survive the quest.
 - Users can come and create rooms and invite their friends.
-- Climb up the leaderboard and conquer the wild west.
 
 ## ⚙️ How we built it
 
